@@ -1,0 +1,14 @@
+{
+    "name": "learn-vue2",
+    "description": "Learning about VueJS 2 Basics",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "start": "browser-sync start --server --files \"**/*.css, **/*.html, **/*.js\""
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "*"
+    }
+}
