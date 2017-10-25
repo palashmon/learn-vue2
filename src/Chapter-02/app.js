@@ -6,7 +6,7 @@ new Vue({
         job: 'Developer'
     },
     methods: {
-        greet: function(time){
+        greet(time) {
             return `Good ${time}, ${this.name}`;
         }
     }
