@@ -13,6 +13,7 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 ### Day 2: 25 Oct 2017
 
 - [x] Learned about handling data and methods in VueJS 2.
+- [x] Learned about data binding and interpolation.
 
 ### Day 3: 26 Oct 2017
 
