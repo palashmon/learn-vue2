@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>VueJs Basics</title>
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <div id="vue-app">
+        <h2>Event Modifiers</h2>
+        <button @click.once="add(1)">Add a Year</button>
+        <button v-on:click="subtract(1)">Subtract a Year</button>
+        <button @dblclick="add(10)">Add 10 Years</button>
+        <button v-on:dblclick="subtract(10)">Subtract 10 Years</button>
+        <p>My age is {{age}}</p>
+        <p>
+            <a @click.prevent="onClickHandler" href="http://example.com/" target="_blank">Click Me!</a>
+        </p>
+        <br>
+        <p>
+            <ul>
+                <li>We are using
+                    <code>.once</code> modifier on
+                    <code>Add a Year</code> buttton</li>
+                <li>Also, we are using
+                    <code>.prevent</code> modifier on
+                    <code>Click Me</code> link</li>
+            </ul>
+        </p>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
