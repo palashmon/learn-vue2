@@ -17,4 +17,11 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 
 ### Day 3: 26 Oct 2017
 
+- [x] Learned about [event handling][events] in VueJS 2
+
+### Day 4: 27 Oct 2017
+
 - [ ] TODO
+
+<!-- All links are added here -->
+[events]: https://vuejs.org/v2/guide/events.html
