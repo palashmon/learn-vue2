@@ -20,10 +20,15 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 - [x] Learned about [event handling][events] in VueJS 2
 - [x] Looked into various [event modifiers][event-modifiers] provided by Vue
 
-### Day 4: 27 Oct 2017
+### Day 4: 30 Oct 2017
+
+- [x] Learned about keyboard event handling and [key modifiers][key-modifiers]
+
+### Day 5: 27 Oct 2017
 
 - [ ] TODO
 
 <!-- All links are added here -->
 [events]: https://vuejs.org/v2/guide/events.html
 [event-modifiers]: https://vuejs.org/v2/guide/events.html#Event-Modifiers
+[key-modifiers]: https://v1.vuejs.org/guide/events.html#Key-Modifiers
