@@ -25,7 +25,11 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 - [x] Learned about keyboard event handling and [key modifiers][key-modifiers]
 - [x] Two-way [data binding][two-way-binding] using [v-model][vmodel]
 
-### Day 5: 27 Oct 2017
+### Day 5: 31 Oct 2017
+
+- [x] Learned about [Computed Properties][computed-properties]
+
+### Day 6: 1 Nov 2017
 
 - [ ] TODO
 
@@ -35,3 +39,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 [key-modifiers]: https://v1.vuejs.org/guide/events.html#Key-Modifiers
 [two-way-binding]: https://v1.vuejs.org/guide/index.html#Two-way-Binding
 [vmodel]: https://v1.vuejs.org/api/#v-model
+[computed-properties]: https://vuejs.org/v2/guide/computed.html#Computed-Properties
