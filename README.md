@@ -28,6 +28,7 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 ### Day 5: 31 Oct 2017
 
 - [x] Learned about [Computed Properties][computed-properties]
+- [x] Dynamic CSS Classes using [`v-bind:class`][v-bind-class]
 
 ### Day 6: 1 Nov 2017
 
@@ -40,3 +41,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 [two-way-binding]: https://v1.vuejs.org/guide/index.html#Two-way-Binding
 [vmodel]: https://v1.vuejs.org/api/#v-model
 [computed-properties]: https://vuejs.org/v2/guide/computed.html#Computed-Properties
+[v-bind-class]: https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
