@@ -19,7 +19,7 @@
 #bag-health div{
     height: 20px;
     background: crimson;
-    transition: width 0.2s ease-in-out;
+    transition: width 0.3s ease-in-out;
 }
 
 #controls{
