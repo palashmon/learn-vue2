@@ -31,7 +31,11 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 - [x] Dynamic CSS Classes using [`v-bind:class`][v-bind-class]
 - [x] [Conditional rendering][conditional-rendering] of DOM elements
 
-### Day 6: 1 Nov 2017
+### Day 6: 2 Nov 2017
+
+- [x] Learned about how we can use the `v-for` directive to [render a list][v-for-list] of items based on an array, object and template.
+
+### Day 7: 3 Nov 2017
 
 - [ ] TODO
 
@@ -44,3 +48,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 [computed-properties]: https://vuejs.org/v2/guide/computed.html#Computed-Properties
 [v-bind-class]: https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
 [conditional-rendering]: https://vuejs.org/v2/guide/conditional.html#ad
+[v-for-list]: https://vuejs.org/v2/guide/list.html
