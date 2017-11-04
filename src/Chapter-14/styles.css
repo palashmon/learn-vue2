@@ -1,0 +1,29 @@
+body{
+    padding: 10px 30px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #24292e;
+    background-color: #fff;
+}
+.paragraph{
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px;
+}
+button {
+  border-radius: 3px;
+  height: 2.25em;
+  color: #363636;
+  cursor: pointer;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  background-color: #209cee;
+  border-color: transparent;
+  color: #fff;
+}
+button:hover {
+  background-color: #1496ed;
+  border-color: transparent;
+  color: #fff;
+}
