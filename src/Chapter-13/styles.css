@@ -1,7 +1,16 @@
+body{
+    padding: 10px 30px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #24292e;
+    background-color: #fff;
+}
 .paragraph{
     padding: 10px;
-    color: #fff;
-    border-radius: 4px;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    background-color:rgb(238, 237, 237);
 }
 
 button {
@@ -19,21 +28,4 @@ button:hover {
   background-color: #1496ed;
   border-color: transparent;
   color: #fff;
-}
-
-.error{
-    background-color: #d9534f;
-    border-color: #d43f3a;
-}
-.error:hover{
-    background-color: #c9302c;
-    border-color: #ac2925;
-}
-.success{
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-}
-.success:hover{
-    background-color: #449d44;
-    border-color: #398439;
 }
