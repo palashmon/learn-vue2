@@ -36,7 +36,12 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 - [x] Learned about how we can use the `v-for` directive to [render a list][v-for-list] of items based on an array, object and template.
 - [x] Worked on a small assignment to create a small game using all VueJS concepts learned so far.
 
-### Day 7: 3 Nov 2017
+### Day 7: 4 Nov 2017
+
+- [x] Learned about using multiple Vue Instances and interacting between them.
+- [x] Also, learned about using [Components][components] in Vue.
+
+### Day 8: 3 Nov 2017
 
 - [ ] TODO
 
@@ -50,3 +55,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 [v-bind-class]: https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax
 [conditional-rendering]: https://vuejs.org/v2/guide/conditional.html#ad
 [v-for-list]: https://vuejs.org/v2/guide/list.html
+[components]: https://vuejs.org/v2/guide/components.html
