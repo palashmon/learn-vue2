@@ -41,7 +41,12 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 - [x] Learned about using multiple Vue Instances and interacting between them.
 - [x] Also, learned about using [Components][components] in Vue.
 
-### Day 8: 3 Nov 2017
+### Day 8: 6 Nov 2017
+
+- [x] Learned about using [Refs][refs] in VueJS.
+- [x] `ref` is used to register a reference to an element or a child component.
+
+### Day 9: 7 Nov 2017
 
 - [ ] TODO
 
@@ -56,3 +61,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 [conditional-rendering]: https://vuejs.org/v2/guide/conditional.html#ad
 [v-for-list]: https://vuejs.org/v2/guide/list.html
 [components]: https://vuejs.org/v2/guide/components.html
+[refs]: https://vuejs.org/v2/api/#ref
