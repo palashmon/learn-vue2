@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>VueJs Basics</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/vue"></script>
+</head>
+
+<body>
+    <h2>Refs</h2>
+    <div id="vue-app">
+        <input type="text" ref="username" placeholder="Enter Username" />
+        <br>
+        <input type="text" ref="email" placeholder="Enter Email" />
+        <br>
+        <button @click="readRefs">Submit</button>
+        <p>
+            <b>Username:</b> {{ outputUsername }}
+            <br>
+            <b>Email:</b> {{ outputEmail }}
+        </p>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
