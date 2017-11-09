@@ -51,6 +51,7 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 
 - [x] Looked into Vue files & the root Component.
 - [x] Created our first `*.vue` file.
+- [x] Learned about nesting components both globally and locally.
 
 ### Day 10: 10 Nov 2017
 
