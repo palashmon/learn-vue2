@@ -47,7 +47,12 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 - [x] `ref` is used to register a reference to an element or a child component.
 - [x] Learned about [vue-cli][vuecli], for scaffolding Vue.js projects.
 
-### Day 9: 7 Nov 2017
+### Day 9: 9 Nov 2017
+
+- [x] Looked into Vue files & the root Component.
+- [x] Created our first `*.vue` file.
+
+### Day 10: 10 Nov 2017
 
 - [ ] TODO
 
