@@ -55,6 +55,11 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 
 ### Day 10: 10 Nov 2017
 
+- [x] Learned about [Component-Scoped CSS][component-scoped-css]
+- [x] Component-Scoped CSS helps in creating styling that is scoped to single-file component only and this styling does not interferes with other component styling.
+
+### Day 11: 11 Nov 2017
+
 - [ ] TODO
 
 <!-- All links are added here -->
@@ -70,3 +75,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 [components]: https://vuejs.org/v2/guide/components.html
 [refs]: https://vuejs.org/v2/api/#ref
 [vuecli]: https://github.com/vuejs/vue-cli#vue-cli--
+[component-scoped-css]: https://vuejs.org/v2/guide/comparison.html#Component-Scoped-CSS
