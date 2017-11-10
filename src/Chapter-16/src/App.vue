@@ -19,7 +19,7 @@ export default {
     },
     data() {
         return {
-            msg: 'Nesting Components',
+            msg: 'Component-Scoped CSS',
             total: 0
         };
     },
@@ -31,7 +31,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
