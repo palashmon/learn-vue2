@@ -1,21 +1,24 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <h2>{{ msg }}</h2>
-    <p>{{ total }}</p>
-    <button-counter v-on:increment="incrementTotal"></button-counter>
-    <button-counter v-on:increment="incrementTotal"></button-counter>
-  </div>
+    <div>
+        <app-header></app-header>
+        <app-ninjas></app-ninjas>
+        <app-footer></app-footer>
+    </div>
 </template>
 
 <script>
 // Import the component first
+import Header from './components/Header.vue';
 import ButtonCounter from './components/ButtonCounter.vue';
+import Ninjas from './components/Ninjas.vue';
+import Footer from './components/Footer.vue';
 
 export default {
     components: {
         // <button-counter> will only be available in parent's template
-        'button-counter': ButtonCounter
+        'app-header': Header,
+        'app-footer': Footer,
+        'app-ninjas': Ninjas
     },
     data() {
         return {
@@ -31,6 +34,14 @@ export default {
 };
 </script>
 
+<style>
+body {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-top: 90px;
+}
+</style>
 <style scoped>
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -38,7 +49,6 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     text-align: center;
-    padding: 30px;
 }
 
 h1,
