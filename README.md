@@ -61,7 +61,7 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 ### Day 11: 13 Nov 2017
 
 - [x] Learned more about nesting components.
-- [x] Created separate componenets for header, footer & content
+- [x] Created separate components for header, footer & content
 
 ### Day 12: 14 Nov 2017
 
