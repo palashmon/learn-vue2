@@ -1,6 +1,10 @@
 # Learning VueJS 2 Basics
 
-This repo contains some simplest case examples on VueJS 2 for learning purpose.
+<h1 align="center">
+  <img src="https://s3.amazonaws.com/revue/items/images/001/602/574/mail/learning-vue-step-by-step.png" style="max-width:100%" alt="Learning VueJS 2 Basics" />
+</h1>
+
+This repo contains some simplest case examples on VueJS 2 for learning purpose. I also add my daily logs here, about what I have learned so far to keep track of my progress. 
 
 ---
 
@@ -65,6 +69,15 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 
 ### Day 12: 14 Nov 2017
 
+- [x] Learned about [props][props] in VueJS.
+- [x] A `prop` is a custom attribute for passing information from parent components.
+- [x] In Vue, the parent-child component relationship can be summarized as **props down, events up**. The parent passes data down to the child via **props**, and the child sends messages to the parent via **events**. 
+<p align="center">
+  <img src="https://vuejs.org/images/props-events.png" width="350"/>
+</p>
+
+### Day 13: 15 Nov 2017
+
 - [ ] TODO
 
 
@@ -82,3 +95,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose.
 [refs]: https://vuejs.org/v2/api/#ref
 [vuecli]: https://github.com/vuejs/vue-cli#vue-cli--
 [component-scoped-css]: https://vuejs.org/v2/guide/comparison.html#Component-Scoped-CSS
+[props]: https://vuejs.org/v2/guide/components.html#Props
