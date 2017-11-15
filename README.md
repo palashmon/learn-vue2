@@ -78,6 +78,12 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose. 
 
 ### Day 13: 15 Nov 2017
 
+- [x] Today learned about Primitive vs Reference types of props passed from parent to child and how it effects parent data once prop data is modified in child components in case of reference type data.
+- [x] Primitive types include `String`, `Number`, `Boolean` and `Symbol`.
+- [x] Reference types include `Object` and `Array`.
+
+### Day 14: 16 Nov 2017
+
 - [ ] TODO
 
 
