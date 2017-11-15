@@ -1,14 +1,23 @@
 <template>
     <header>
-        <h2>{{ title }}</h2>
+        <h2 @click="changeTitle">{{ title }}</h2>
     </header>
 </template>
 <script>
 export default {
+    props: {
+        title: {
+            type: String,
+            required: true
+        }
+    },
     data() {
-        return {
-            title: 'VueJs Basics'
-        };
+        return {};
+    },
+    methods: {
+        changeTitle: function() {
+            this.title = 'Vue Ninjas';
+        }
     }
 };
 </script>

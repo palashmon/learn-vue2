@@ -5,9 +5,15 @@
 </template>
 <script>
 export default {
+    props: {
+        title: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
-            copyright: `Copyright ${new Date().getFullYear()} Palash Mondal. Learning VueJs Basics.`
+            copyright: `© ${new Date().getFullYear()} Palash Mondal. Learning ${this.title}.`
         };
     }
 };
