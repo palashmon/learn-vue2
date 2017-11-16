@@ -4,7 +4,7 @@
   <img src="https://s3.amazonaws.com/revue/items/images/001/602/574/mail/learning-vue-step-by-step.png" style="max-width:100%" alt="Learning VueJS 2 Basics" />
 </h1>
 
-This repo contains some simplest case examples on VueJS 2 for learning purpose. I also add my daily logs here, about what I have learned so far to keep track of my progress. 
+This repo contains some simplest case examples on VueJS 2 for learning purpose. I also add my daily logs here, about what I have learned so far to keep track of my progress.
 
 ---
 
@@ -71,7 +71,7 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose. 
 
 - [x] Learned about [props][props] in VueJS.
 - [x] A `prop` is a custom attribute for passing information from parent components.
-- [x] In Vue, the parent-child component relationship can be summarized as **props down, events up**. The parent passes data down to the child via **props**, and the child sends messages to the parent via **events**. 
+- [x] In Vue, the parent-child component relationship can be summarized as **props down, events up**. The parent passes data down to the child via **props**, and the child sends messages to the parent via **events**.
 <p align="center">
   <img src="https://vuejs.org/images/props-events.png" width="350"/>
 </p>
@@ -83,6 +83,11 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose. 
 - [x] Reference types include `Object` and `Array`.
 
 ### Day 14: 16 Nov 2017
+
+- [x] Learned about using `v-on` with [Custom Events][custom-events].
+- [x] We can actually listen to an `$emit` event from a child with `v-on` in parent component.
+
+### Day 15: 17 Nov 2017
 
 - [ ] TODO
 
@@ -102,3 +107,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose. 
 [vuecli]: https://github.com/vuejs/vue-cli#vue-cli--
 [component-scoped-css]: https://vuejs.org/v2/guide/comparison.html#Component-Scoped-CSS
 [props]: https://vuejs.org/v2/guide/components.html#Props
+[custom-events]: https://vuejs.org/v2/guide/components.html#Using-v-on-with-Custom-Events
