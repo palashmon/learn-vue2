@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>{{ copyright }}</p>
+        <p @click="changeTitle">{{ copyright }} {{ title }}</p>
     </footer>
 </template>
 <script>
@@ -13,8 +13,13 @@ export default {
     },
     data() {
         return {
-            copyright: `© ${new Date().getFullYear()} Palash Mondal. Learning ${this.title}.`
+            copyright: `© ${new Date().getFullYear()} Palash Mondal. Learning`
         };
+    },
+    methods: {
+        changeTitle: function() {
+            this.$emit('changeTitle', 'Vue Wizards');
+        }
     }
 };
 </script>
