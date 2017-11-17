@@ -22,10 +22,13 @@ export default {
     },
     created() {
         // Listen for the changeTitle event and its payload.
-        bus.$on('titleChanged', data => {
+        bus.$on('titleChanged', this.setTitle);
+    },
+    methods: {
+        setTitle: function(newTitle) {
             console.log(`Header was clicked. Nice!`);
-            this.mutableTitle = data;
-        });
+            this.mutableTitle = newTitle;
+        }
     }
 };
 </script>
