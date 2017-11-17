@@ -1,9 +1,12 @@
 <template>
     <header>
-        <h2 @click="changeTitle">{{ title }}</h2>
+        <h2 @click="changeTitle">{{ mutableTitle }}</h2>
     </header>
 </template>
 <script>
+// Import the Event Bus we just created.
+import { bus } from '../main';
+
 export default {
     props: {
         title: {
@@ -12,11 +15,16 @@ export default {
         }
     },
     data() {
-        return {};
+        return {
+            mutableTitle: this.title
+        };
     },
     methods: {
         changeTitle: function() {
-            this.$emit('changeTitle', 'Vue Ninjas');
+            this.mutableTitle = 'Vue Ninjas';
+
+            // Send the event on a channel (changeTitle) with a payload (this.title)
+            bus.$emit('titleChanged', this.mutableTitle);
         }
     }
 };

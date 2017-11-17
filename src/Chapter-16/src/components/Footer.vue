@@ -1,9 +1,12 @@
 <template>
     <footer>
-        <p @click="changeTitle">{{ copyright }} {{ title }}</p>
+        <p>{{ copyright }} {{ mutableTitle }}</p>
     </footer>
 </template>
 <script>
+// Import the Event Bus we just created.
+import { bus } from '../main';
+
 export default {
     props: {
         title: {
@@ -13,13 +16,16 @@ export default {
     },
     data() {
         return {
-            copyright: `© ${new Date().getFullYear()} Palash Mondal. Learning`
+            copyright: `© ${new Date().getFullYear()} Palash Mondal. Learning`,
+            mutableTitle: this.title
         };
     },
-    methods: {
-        changeTitle: function() {
-            this.$emit('changeTitle', 'Vue Wizards');
-        }
+    created() {
+        // Listen for the changeTitle event and its payload.
+        bus.$on('titleChanged', data => {
+            console.log(`Header was clicked. Nice!`);
+            this.mutableTitle = data;
+        });
     }
 };
 </script>

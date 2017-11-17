@@ -1,8 +1,8 @@
 <template>
     <div>
-        <app-header v-bind:title="title" @changeTitle="updateTitle($event)"></app-header>
+        <app-header v-bind:title="title"></app-header>
         <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
-        <app-footer v-bind:title="title" @changeTitle="updateTitle($event)"></app-footer>
+        <app-footer v-bind:title="title"></app-footer>
     </div>
 </template>
 
