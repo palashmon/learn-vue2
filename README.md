@@ -89,6 +89,11 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose. 
 
 ### Day 15: 17 Nov 2017
 
+- [x] Learned about creating a global [Event Bus][event-bus] with VueJS.
+- [x] We could manage communication between components with a single event bus.
+
+### Day 16: 18 Nov 2017
+
 - [ ] TODO
 
 
@@ -108,3 +113,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose. 
 [component-scoped-css]: https://vuejs.org/v2/guide/comparison.html#Component-Scoped-CSS
 [props]: https://vuejs.org/v2/guide/components.html#Props
 [custom-events]: https://vuejs.org/v2/guide/components.html#Using-v-on-with-Custom-Events
+[event-bus]: https://alligator.io/vuejs/global-event-bus/
