@@ -6,6 +6,7 @@
                 <h3 v-show="ninja.show">{{ ninja.speciality }}</h3>
             </li>
         </ul>
+        <button @click="deleteNinja">Delete</button>
     </div>
 </template>
 <script>
@@ -18,6 +19,37 @@ export default {
     },
     data() {
         return {};
+    },
+    methods: {
+        // Running $vm0.ninjas.pop() in console run last two lif-cycle hooks
+        // Before Update and Updated
+        deleteNinja() {
+            this.ninjas.pop();
+        }
+    },
+    beforeCreate() {
+        console.groupCollapsed('Creation');
+        console.log('Before Create');
+    },
+    created() {
+        console.log('Created');
+    },
+    beforeMount() {
+        console.log('Before Mount');
+    },
+    mounted() {
+        console.log('Mounted');
+        console.groupEnd('Creation');
+    },
+    beforeUpdate() {
+        console.log('Before Update');
+    },
+    updated() {
+        const text = 'Updated';
+        console.groupCollapsed(text);
+        console.log(text);
+        console.log(this.ninjas);
+        console.groupEnd(text);
     }
 };
 </script>
