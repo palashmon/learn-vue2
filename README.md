@@ -92,7 +92,25 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose. 
 - [x] Learned about creating a global [Event Bus][event-bus] with VueJS.
 - [x] We could manage communication between components with a single event bus.
 
-### Day 16: 18 Nov 2017
+### Day 16: 20 Nov 2017
+
+- [x] Learned about Vue [lifecycle hooks][lifecycle-hooks].
+- [x] It gives users the opportunity to add their own code at specific stages Vue instance initialization.
+- [x] For example, the `created` hook can be used to run code after an instance is created.
+```js
+new Vue({
+  data: {
+    a: 1
+  },
+  created: function () {
+    // `this` points to the vm instance
+    console.log('a is: ' + this.a)
+  }
+})
+// => "a is: 1"
+```
+
+### Day 17: 21 Nov 2017
 
 - [ ] TODO
 
@@ -114,3 +132,4 @@ This repo contains some simplest case examples on VueJS 2 for learning purpose. 
 [props]: https://vuejs.org/v2/guide/components.html#Props
 [custom-events]: https://vuejs.org/v2/guide/components.html#Using-v-on-with-Custom-Events
 [event-bus]: https://alligator.io/vuejs/global-event-bus/
+[lifecycle-hooks]: https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram
