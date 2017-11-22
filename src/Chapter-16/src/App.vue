@@ -1,41 +1,55 @@
 <template>
     <div>
-        <app-header v-bind:title="title"></app-header>
-        <app-ninjas v-bind:ninjas="ninjas"></app-ninjas>
-        <app-footer v-bind:title="title"></app-footer>
+        <h2 class="text-center">Using Slots in VueJS</h2>
+        <div class="flex-container">
+            <div class="flex-item">
+                <form-helper>
+                    <div slot="form-header">
+                        <h3>This is the title of a form #1</h3>
+                        <p>This is some info about the form</p>
+                    </div>
+                    <div slot="form-fields">
+                        <input type="text" placeholder="name" required />
+                        <input type="password" placeholder="password" required />
+                    </div>
+                    <div slot="form-controls">
+                        <button v-on:click="handleSubmit">Submit</button>
+                    </div>
+                </form-helper>
+            </div>
+            <div class="flex-item">
+                <form-helper>
+                    <div slot="form-header">
+                        <h3>This is the title of a form #2</h3>
+                        <p>This is custom paragraph</p>
+                    </div>
+                    <div slot="form-fields">
+                        <input type="text" placeholder="name" required />
+                        <input type="password" placeholder="password" required />
+                    </div>
+                    <div slot="form-controls">
+                        <button v-on:click="handleSubmit">Submit</button>
+                    </div>
+                </form-helper>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
 // Import the component first
-import Header from './components/Header.vue';
-import ButtonCounter from './components/ButtonCounter.vue';
-import Ninjas from './components/Ninjas.vue';
-import Footer from './components/Footer.vue';
+import formHelper from './components/FormHelper.vue';
 
 export default {
     components: {
-        // <button-counter> will only be available in parent's template
-        'app-header': Header,
-        'app-footer': Footer,
-        'app-ninjas': Ninjas
+        'form-helper': formHelper
     },
     data() {
-        return {
-            ninjas: [
-                { name: 'Ryu', speciality: 'Vue Components', show: false },
-                { name: 'Crystal', speciality: 'HTML Wizardry', show: false },
-                { name: 'Hitoshi', speciality: 'Click Events', show: false },
-                { name: 'Tango', speciality: 'Conditionals', show: false },
-                { name: 'Kami', speciality: 'Webpack', show: false },
-                { name: 'Yoshi', speciality: 'Data Diggin', show: false }
-            ],
-            title: 'VueJs Basics'
-        };
+        return {};
     },
     methods: {
-        updateTitle: function(updatedTitle) {
-            this.title = updatedTitle;
+        handleSubmit: function() {
+            alert('Thanks for submitting');
         }
     }
 };
@@ -43,26 +57,64 @@ export default {
 
 <style>
 body {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    padding-top: 90px;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #24292e;
+    background-color: #fff;
+    padding: 30px;
 }
-</style>
-<style scoped>
-#app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: #2c3e50;
+.paragraph {
+    padding: 10px;
+    color: #fff;
+    border-radius: 4px;
+}
+button {
+    border-radius: 3px;
+    height: 2.25em;
+    color: #363636;
+    cursor: pointer;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    background-color: #209cee;
+    border-color: transparent;
+    color: #fff;
+}
+button:hover {
+    background-color: #1496ed;
+    border-color: transparent;
+    color: #fff;
+}
+input,
+textarea {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: none;
+    line-height: 1.5;
+    padding: 6px 8px;
+    background-color: white;
+    border-color: #dbdbdb;
+    color: #363636;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input:hover,
+textarea:hover {
+    border-color: #b5b5b5;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3273dc;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+.text-center {
     text-align: center;
-}
-
-h1,
-h2 {
-    font-weight: normal;
-}
-img {
-    width: 80px;
 }
 </style>
