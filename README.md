@@ -110,7 +110,12 @@ new Vue({
 // => "a is: 1"
 ```
 
-### Day 17: 21 Nov 2017
+### Day 17: 22 Nov 2017
+
+- [x] Today learned about using [slots][slots-vue] in VueJS.
+- [x] It mainly allow a parent component to pass DOM elements into a child component.
+
+### Day 18: 23 Nov 2017
 
 - [ ] TODO
 
@@ -133,3 +138,4 @@ new Vue({
 [custom-events]: https://vuejs.org/v2/guide/components.html#Using-v-on-with-Custom-Events
 [event-bus]: https://alligator.io/vuejs/global-event-bus/
 [lifecycle-hooks]: https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram
+[slots-vue]: https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots
