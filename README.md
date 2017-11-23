@@ -104,18 +104,18 @@ logs here, about what I have learned so far to keep track of my progress.
       initialization.
 * [x] For example, the `created` hook can be used to run code after an instance is created.
 
-```js
-new Vue({
-    data: {
-        a: 1
-    },
-    created: function() {
-        // `this` points to the vm instance
-        console.log('a is: ' + this.a);
-    }
-});
-// => "a is: 1"
-```
+          ```js
+          new Vue({
+              data: {
+                  a: 1
+              },
+              created: function() {
+                  // `this` points to the vm instance
+                  console.log('a is: ' + this.a);
+              }
+          });
+          // => "a is: 1"
+          ```
 
 ### Day 17: 22 Nov 2017
 
@@ -128,11 +128,11 @@ new Vue({
 * [x] We can dynamically switch between multiple components using the reserved `<component>` element
       and dynamically bind to its `is` attribute.
 
-```js
-<component v-bind:is="currentView">
-  <!-- component changes when currentView data changes! -->
-</component>
-```
+          ```vue
+          <component v-bind:is="currentView">
+          <!-- component changes when currentView data changes! -->
+          </component>
+          ```
 
 ### Day 19: 24 Nov 2017
 
