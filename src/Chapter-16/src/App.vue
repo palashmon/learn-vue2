@@ -1,56 +1,27 @@
 <template>
     <div>
-        <h2 class="text-center">Using Slots in VueJS</h2>
-        <div class="flex-container">
-            <div class="flex-item">
-                <form-helper>
-                    <div slot="form-header">
-                        <h3>This is the title of a form #1</h3>
-                        <p>This is some info about the form</p>
-                    </div>
-                    <div slot="form-fields">
-                        <input type="text" placeholder="name" required />
-                        <input type="password" placeholder="password" required />
-                    </div>
-                    <div slot="form-controls">
-                        <button v-on:click="handleSubmit">Submit</button>
-                    </div>
-                </form-helper>
-            </div>
-            <div class="flex-item">
-                <form-helper>
-                    <div slot="form-header">
-                        <h3>This is the title of a form #2</h3>
-                        <p>This is custom paragraph</p>
-                    </div>
-                    <div slot="form-fields">
-                        <input type="text" placeholder="name" required />
-                        <input type="password" placeholder="password" required />
-                    </div>
-                    <div slot="form-controls">
-                        <button v-on:click="handleSubmit">Submit</button>
-                    </div>
-                </form-helper>
-            </div>
-        </div>
+        <keep-alive>
+            <component :is="component"></component>
+        </keep-alive>
+        <button @click="component = 'form-one'">Show form one</button>
+        <button @click="component = 'form-two'">Show form two</button>
     </div>
 </template>
 
 <script>
 // Import the component first
-import formHelper from './components/FormHelper.vue';
+import formOne from './components/FormOne.vue';
+import formTwo from './components/FormTwo.vue';
 
 export default {
     components: {
-        'form-helper': formHelper
+        'form-one': formOne,
+        'form-two': formTwo
     },
     data() {
-        return {};
-    },
-    methods: {
-        handleSubmit: function() {
-            alert('Thanks for submitting');
-        }
+        return {
+            component: 'form-one'
+        };
     }
 };
 </script>
