@@ -1,22 +1,16 @@
 <template>
     <div>
-        <keep-alive>
-            <component :is="component"></component>
-        </keep-alive>
-        <button @click="component = 'form-one'">Show form one</button>
-        <button @click="component = 'form-two'">Show form two</button>
+        <add-blog></add-blog>
     </div>
 </template>
 
 <script>
 // Import the component first
-import formOne from './components/FormOne.vue';
-import formTwo from './components/FormTwo.vue';
+import addBlog from './components/AddBlog.vue';
 
 export default {
     components: {
-        'form-one': formOne,
-        'form-two': formTwo
+        'add-blog': addBlog
     },
     data() {
         return {
