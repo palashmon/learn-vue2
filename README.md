@@ -134,7 +134,12 @@ new Vue({
 </component>
 ```
 
-### Day 19: 24 Nov 2017
+### Day 19: 28 Nov 2017
+
+* [x] Learned about basic usage of form [input binding][basic-usage-input].
+* [x] Learned about form [modifiers][modifiers] like `.lazy`, `.number` and `.trim`.
+
+### Day 20: 24 Nov 2017
 
 * [ ] TODO
 
@@ -159,3 +164,5 @@ new Vue({
 [lifecycle-hooks]: https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram
 [slots-vue]: https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots
 [dynamic-components]: https://vuejs.org/v2/guide/components.html#Dynamic-Components
+[basic-usage-input]: https://vuejs.org/v2/guide/forms.html#Basic-Usage
+[modifiers]: https://vuejs.org/v2/guide/forms.html#Modifiers
