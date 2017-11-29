@@ -50,7 +50,7 @@ button:hover {
     border-color: transparent;
     color: #fff;
 }
-input,
+input[type='text'],
 textarea {
     border: 1px solid transparent;
     border-radius: 3px;
