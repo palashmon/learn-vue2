@@ -139,7 +139,11 @@ new Vue({
 * [x] Learned about basic usage of form [input binding][basic-usage-input].
 * [x] Learned about form [modifiers][modifiers] like `.lazy`, `.number` and `.trim`.
 
-### Day 20: 24 Nov 2017
+### Day 20: 29 Nov 2017
+
+* [x] Learned about single [checkbox][checkbox] and multiple checkboxes binding.
+
+### Day 21: 31 Nov 2017
 
 * [ ] TODO
 
@@ -166,3 +170,4 @@ new Vue({
 [dynamic-components]: https://vuejs.org/v2/guide/components.html#Dynamic-Components
 [basic-usage-input]: https://vuejs.org/v2/guide/forms.html#Basic-Usage
 [modifiers]: https://vuejs.org/v2/guide/forms.html#Modifiers
+[checkbox]: https://vuejs.org/v2/guide/forms.html#Checkbox
