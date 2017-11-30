@@ -143,6 +143,11 @@ new Vue({
 
 * [x] Learned about single [checkbox][checkbox] and multiple checkboxes binding.
 
+### Day 21: 30 Nov 2017
+
+* [x] Learned about [select][select] box binding.
+* [x] Also, about how we can make HTTP post requests using [vue-resource][vue-resource].
+
 ### Day 21: 31 Nov 2017
 
 * [ ] TODO
@@ -171,3 +176,5 @@ new Vue({
 [basic-usage-input]: https://vuejs.org/v2/guide/forms.html#Basic-Usage
 [modifiers]: https://vuejs.org/v2/guide/forms.html#Modifiers
 [checkbox]: https://vuejs.org/v2/guide/forms.html#Checkbox
+[select]: https://vuejs.org/v2/guide/forms.html#Select
+[vue-resource]: https://github.com/pagekit/vue-resource
