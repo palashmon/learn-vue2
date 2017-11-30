@@ -34,6 +34,22 @@ body {
     color: #fff;
     border-radius: 4px;
 }
+.error {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.error:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+.success {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.success:hover {
+    background-color: #449d44;
+    border-color: #398439;
+}
 button {
     border-radius: 3px;
     height: 2.25em;
