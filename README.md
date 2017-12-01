@@ -146,9 +146,14 @@ new Vue({
 ### Day 21: 30 Nov 2017
 
 * [x] Learned about [select][select] box binding.
-* [x] Also, about how we can make HTTP post requests using [vue-resource][vue-resource].
+* [x] Also, about how we can make HTTP post requests using [`vue-resource`][vue-resource].
 
-### Day 21: 31 Nov 2017
+### Day 22: 01 Dec 2017
+
+* [x] Learned about how we can make HTTP GET request using `vue-resource`.
+* [x] Also, about how we can read & display the response data returned from this http request.
+
+### Day 23: 02 Dec 2017
 
 * [ ] TODO
 
