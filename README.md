@@ -155,6 +155,12 @@ new Vue({
 
 ### Day 23: 02 Dec 2017
 
+* [x] Learned about how we can create [custom directives][custom-directive] and implement custom
+      behaviours in our applications.
+* [x] Learned about directive [hook functions][hook-fn] and [hook arguments][hook-arg].
+
+### Day 24: 03 Dec 2017
+
 * [ ] TODO
 
 <!-- All links are added here -->
@@ -183,3 +189,6 @@ new Vue({
 [checkbox]: https://vuejs.org/v2/guide/forms.html#Checkbox
 [select]: https://vuejs.org/v2/guide/forms.html#Select
 [vue-resource]: https://github.com/pagekit/vue-resource
+[custom-directive]: https://vuejs.org/v2/guide/custom-directive.html
+[hook-fn]: https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions
+[hook-arg]: https://vuejs.org/v2/guide/custom-directive.html#Directive-Hook-Arguments
