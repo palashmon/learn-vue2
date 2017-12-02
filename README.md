@@ -125,8 +125,8 @@ new Vue({
 ### Day 18: 23 Nov 2017
 
 * [x] Learned about using [Dynamic Components][dynamic-components].
-* [x] We can dynamically switch between multiple components using the reserved `<component>` element
-      and dynamically bind to its `is` attribute.
+* [x] We can dynamically switch between multiple components using the reserved `<d>` element and
+      dynamically bind to its `is` attribute.
 
 ```vue
 <component v-bind:is="currentView">
@@ -158,6 +158,14 @@ new Vue({
 * [x] Learned about how we can create [custom directives][custom-directive] and implement custom
       behaviours in our applications.
 * [x] Learned about directive [hook functions][hook-fn] and [hook arguments][hook-arg].
+* [x] Using [filters][filters] to apply common text formatting.
+
+```vue
+<div>
+    <!-- 'capitalize' is a filter function which will receive the value of 'message' as its argument -->
+    {{ message | capitalize }}
+</div>
+```
 
 ### Day 24: 03 Dec 2017
 
@@ -192,3 +200,4 @@ new Vue({
 [custom-directive]: https://vuejs.org/v2/guide/custom-directive.html
 [hook-fn]: https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions
 [hook-arg]: https://vuejs.org/v2/guide/custom-directive.html#Directive-Hook-Arguments
+[filters]: https://vuejs.org/v2/guide/filters.html
