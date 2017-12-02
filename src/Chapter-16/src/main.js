@@ -8,15 +8,11 @@ export const bus = new Vue();
 // Use vue-resource package
 Vue.use(VueResource);
 
-// Custom directives
-Vue.directive('rainbow', {
-    bind(el, binding, vnode) {
-        const color = `#${Math.random()
-            .toString(16)
-            .slice(2, 8)}`;
-        // console.log(color);
-        el.style.color = color;
-    }
+// Filters
+Vue.filter('capitalize', value => {
+    if (!value) return '';
+    const str = value.toString();
+    return `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
 });
 
 new Vue({
