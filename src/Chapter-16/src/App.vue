@@ -1,22 +1,25 @@
 <template>
     <div>
         <show-blogs></show-blogs>
+        <hr>
+        <list-blogs></list-blogs>
     </div>
 </template>
 
 <script>
 // Import the component first
 import showBlogs from './components/ShowBlogs.vue';
+import listBlogs from './components/ListBlogs.vue';
 
 export default {
     components: {
-        'show-blogs': showBlogs
+        'show-blogs': showBlogs,
+        'list-blogs': listBlogs
     },
     data() {
-        return {
-            component: 'form-one'
-        };
-    }
+        return {};
+    },
+    methods: {}
 };
 </script>
 

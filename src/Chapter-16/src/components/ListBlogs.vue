@@ -1,16 +1,15 @@
 <template>
     <div id="show-blogs">
-        <h1>All Blog Articles</h1>
-        <input type="text" v-model="search" placeholder="Search Blogs" />
+        <h1>List Blog Titles</h1>
+        <input type="text" v-model="search" placeholder="search blogs" />
         <div v-for="blog in filteredBlogs" class="single-blog" :key="blog.id">
             <h2>#{{ blog.id }} - {{ blog.title | capitalize}}</h2>
-            <article>{{ blog.body | capitalize }}</article>
         </div>
     </div>
 </template>
 
 <script>
-// Add serach mixin
+// Imports
 import searchMixin from '../mixins/searchMixin';
 export default {
     data() {
@@ -19,7 +18,6 @@ export default {
             search: ''
         };
     },
-    methods: {},
     created() {
         this.$http.get('http://jsonplaceholder.typicode.com/posts').then(function(data) {
             this.blogs = data.body.slice(0, 10);
@@ -39,11 +37,5 @@ export default {
     margin: 20px 0;
     box-sizing: border-box;
     background: #eee;
-}
-.single-blog h2 {
-    margin-top: 0;
-}
-.single-blog article {
-    text-align: justify;
 }
 </style>
