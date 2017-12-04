@@ -171,6 +171,8 @@ new Vue({
 
 * [x] Created a custom [search filter][filtered-sorted-results] using computed properties.
 * [x] Learned about how we can register filters and directives locally.
+* [x] Also, about how to use [mixins][mixins].
+* [x] Mixins are a flexible way to distribute reusable functionalities for Vue components.
 
 ### Day 26: 05 Dec 2017
 
@@ -207,3 +209,4 @@ new Vue({
 [hook-arg]: https://vuejs.org/v2/guide/custom-directive.html#Directive-Hook-Arguments
 [filters]: https://vuejs.org/v2/guide/filters.html
 [filtered-sorted-results]: https://vuejs.org/v2/guide/list.html#Displaying-Filtered-Sorted-Results
+[mixins]: https://vuejs.org/v2/guide/mixins.html#ad
