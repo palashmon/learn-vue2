@@ -169,7 +169,8 @@ new Vue({
 
 ### Day 25: 04 Dec 2017
 
-* [x] Created a custom [search filter][Filtered-Sorted-Results] using computed properties.
+* [x] Created a custom [search filter][filtered-sorted-results] using computed properties.
+* [x] Learned about how we can register filters and directives locally.
 
 ### Day 26: 05 Dec 2017
 
@@ -205,4 +206,4 @@ new Vue({
 [hook-fn]: https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions
 [hook-arg]: https://vuejs.org/v2/guide/custom-directive.html#Directive-Hook-Arguments
 [filters]: https://vuejs.org/v2/guide/filters.html
-[Filtered-Sorted-Results]: https://vuejs.org/v2/guide/list.html#Displaying-Filtered-Sorted-Results
+[filtered-sorted-results]: https://vuejs.org/v2/guide/list.html#Displaying-Filtered-Sorted-Results
