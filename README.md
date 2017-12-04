@@ -167,7 +167,11 @@ new Vue({
 </div>
 ```
 
-### Day 24: 03 Dec 2017
+### Day 25: 04 Dec 2017
+
+* [x] Created a custom [search filter][Filtered-Sorted-Results] using computed properties.
+
+### Day 26: 05 Dec 2017
 
 * [ ] TODO
 
@@ -201,3 +205,4 @@ new Vue({
 [hook-fn]: https://vuejs.org/v2/guide/custom-directive.html#Hook-Functions
 [hook-arg]: https://vuejs.org/v2/guide/custom-directive.html#Directive-Hook-Arguments
 [filters]: https://vuejs.org/v2/guide/filters.html
+[Filtered-Sorted-Results]: https://vuejs.org/v2/guide/list.html#Displaying-Filtered-Sorted-Results
