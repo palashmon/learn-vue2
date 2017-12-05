@@ -176,6 +176,10 @@ new Vue({
 
 ### Day 26: 05 Dec 2017
 
+* [x] Learned about basic usage of [vue-router library][vue-router].
+
+### Day 27: 06 Dec 2017
+
 * [ ] TODO
 
 <!-- All links are added here -->
@@ -210,3 +214,4 @@ new Vue({
 [filters]: https://vuejs.org/v2/guide/filters.html
 [filtered-sorted-results]: https://vuejs.org/v2/guide/list.html#Displaying-Filtered-Sorted-Results
 [mixins]: https://vuejs.org/v2/guide/mixins.html#ad
+[vue-router]: https://router.vuejs.org/en/essentials/getting-started.html

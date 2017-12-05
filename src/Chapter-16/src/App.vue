@@ -1,8 +1,6 @@
 <template>
     <div>
-        <show-blogs></show-blogs>
-        <hr>
-        <list-blogs></list-blogs>
+        <router-view></router-view>
     </div>
 </template>
 
