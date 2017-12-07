@@ -10,6 +10,7 @@ Vue.use(VueRouter);
 
 // Register routes
 const router = new VueRouter({
+    mode: 'history',
     routes: Routes
 });
 

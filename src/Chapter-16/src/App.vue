@@ -1,12 +1,6 @@
 <template>
     <div>
-        <p>
-            <!-- use router-link component for navigation. -->
-            <!-- specify the link by passing the `to` prop. -->
-            <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
-            <router-link to="/">Show Blogs</router-link>
-            <router-link to="/add">Add Blog</router-link>
-        </p>
+        <app-header></app-header>
         <!-- route outlet -->
         <!-- component matched by the route will render here -->
         <router-view></router-view>
@@ -17,11 +11,11 @@
 // Import the component first
 import showBlogs from './components/ShowBlogs.vue';
 import listBlogs from './components/ListBlogs.vue';
+import header from './components/Header.vue';
 
 export default {
     components: {
-        'show-blogs': showBlogs,
-        'list-blogs': listBlogs
+        'app-header': header
     },
     data() {
         return {};
@@ -37,7 +31,7 @@ body {
     line-height: 1.5;
     color: #24292e;
     background-color: #fff;
-    padding: 30px;
+    margin: 0;
 }
 .paragraph {
     padding: 10px;

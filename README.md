@@ -178,6 +178,11 @@ new Vue({
 
 * [x] Learned about basic usage of [vue-router library][vue-router].
 
+### Day 27: 07 Dec 2017
+
+* [x] Learned about [routing modes][routing-mode]: "hash" & "history".
+* [x] Enabling user navigation using [`<router-link>`][router-link] component.
+
 ### Day 27: 06 Dec 2017
 
 * [ ] TODO
@@ -215,3 +220,5 @@ new Vue({
 [filtered-sorted-results]: https://vuejs.org/v2/guide/list.html#Displaying-Filtered-Sorted-Results
 [mixins]: https://vuejs.org/v2/guide/mixins.html#ad
 [vue-router]: https://router.vuejs.org/en/essentials/getting-started.html
+[routing-mode]: https://router.vuejs.org/en/api/options.html#mode
+[router-link]: https://router.vuejs.org/en/api/router-link.html

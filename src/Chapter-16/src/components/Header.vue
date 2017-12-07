@@ -1,45 +1,39 @@
 <template>
-    <header>
-        <h2 @click="changeTitle">{{ mutableTitle }}</h2>
-    </header>
+    <nav>
+        <ul>
+            <li><router-link to="/" exact>Blog</router-link></li>
+            <li><router-link to="/add" exact>Add a new blog</router-link></li>
+        </ul>
+    </nav>
 </template>
+
 <script>
-// Import the Event Bus we just created.
-import { bus } from '../main';
-
-export default {
-    props: {
-        title: {
-            type: String,
-            required: true
-        }
-    },
-    data() {
-        return {
-            mutableTitle: this.title
-        };
-    },
-    methods: {
-        changeTitle: function() {
-            this.mutableTitle = 'Vue Ninjas';
-
-            // Send the event on a channel (changeTitle) with a payload (this.title)
-            bus.$emit('titleChanged', this.mutableTitle);
-        }
-    }
-};
+export default {}
 </script>
+
 <style scoped>
-header {
-    background: lightgreen;
-    padding: 10px;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-}
-h2 {
-    color: #222;
+ul{
+    list-style-type: none;
     text-align: center;
+    margin: 0;
+}
+li{
+    display: inline-block;
+    margin: 0 10px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 10px;
+}
+nav{
+    background: #444;
+    padding: 14px 0;
+    margin-bottom: 40px;
+}
+.router-link-active{
+    background: #eee;
+    color: #444;
 }
 </style>
