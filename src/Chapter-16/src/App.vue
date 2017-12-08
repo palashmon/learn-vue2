@@ -27,9 +27,11 @@ export default {
 <style>
 body {
     font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
     font-size: 14px;
     line-height: 1.5;
-    color: #24292e;
     background-color: #fff;
     margin: 0;
 }
@@ -101,5 +103,17 @@ textarea:focus {
 }
 .text-center {
     text-align: center;
+}
+h1,
+h2 {
+    letter-spacing: 0.1px;
+}
+
+article {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+    letter-spacing: 0.09px;
 }
 </style>

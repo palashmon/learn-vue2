@@ -21,7 +21,13 @@ export default {
     },
     methods: {},
     created() {
+        const concatinate = text =>
+            `${text} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor libero sit amet lacus pulvinar, vel cursus odio mollis. Cras posuere, lectus ac lacinia mattis, sapien tellus maximus enim, non condimentum diam quam vitae diam.`;
+
         this.$http.get('http://jsonplaceholder.typicode.com/posts').then(function(data) {
+            // const body = data.body.slice(0, 10);
+            // body.forEach(o => (o.body = concatinate(o.body)));
+            // console.log(body);
             this.blogs = data.body.slice(0, 10);
         });
     },
