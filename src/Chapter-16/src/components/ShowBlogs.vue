@@ -3,7 +3,10 @@
         <h1>All Blog Articles</h1>
         <input type="text" v-model="search" placeholder="Search Blogs" />
         <div v-for="blog in filteredBlogs" class="single-blog" :key="blog.id">
-            <h2>#{{ blog.id }} - {{ blog.title | capitalize}}</h2>
+            <h2>
+                <router-link v-bind:to="'/blog/' + blog.id">#{{ blog.id }}</router-link>
+                - {{ blog.title | capitalize}}
+            </h2>
             <article>{{ blog.body | capitalize }}</article>
         </div>
     </div>
@@ -44,7 +47,10 @@ export default {
     padding: 20px;
     margin: 20px 0;
     box-sizing: border-box;
-    background: #eee;
+    background: #4ac29a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bdfff3, #4ac29a);
+    background: linear-gradient(to right, #bdfff3, #4ac29a);
+    border-radius: 6px;
 }
 .single-blog h2 {
     margin-top: 0;

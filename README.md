@@ -183,7 +183,23 @@ new Vue({
 * [x] Learned about [routing modes][routing-mode]: "hash" & "history".
 * [x] Enabling user navigation using [`<router-link>`][router-link] component.
 
-### Day 27: 06 Dec 2017
+### Day 28: 11 Dec 2017
+
+* [x] Learned about [Dynamic Route Matching][dynamic-route-matching].
+* [x] Also, learned how we can fetch dynamic segment in route path, which start with a colon `:`.
+
+```js
+const router = new VueRouter({
+    routes: [
+        // dynamic segments start with a colon
+        { path: '/user/:id', component: User }
+    ]
+});
+```
+
+* [x] You can check out a simple live example [here][dynamic-route-matching2].
+
+### Day 29: 12 Dec 2017
 
 * [ ] TODO
 
@@ -222,3 +238,5 @@ new Vue({
 [vue-router]: https://router.vuejs.org/en/essentials/getting-started.html
 [routing-mode]: https://router.vuejs.org/en/api/options.html#mode
 [router-link]: https://router.vuejs.org/en/api/router-link.html
+[dynamic-route-matching]: https://router.vuejs.org/en/essentials/dynamic-matching.html
+[dynamic-route-matching2]: https://jsfiddle.net/Lb0h803v/
