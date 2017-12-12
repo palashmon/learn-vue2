@@ -106,13 +106,13 @@ logs here, about what I have learned so far to keep track of my progress.
 
 ```js
 new Vue({
-    data: {
-        a: 1
-    },
-    created: function() {
-        // `this` points to the vm instance
-        console.log('a is: ' + this.a);
-    }
+	data: {
+		a: 1
+	},
+	created: function() {
+		// `this` points to the vm instance
+		console.log('a is: ' + this.a);
+	}
 });
 // => "a is: 1"
 ```
@@ -190,16 +190,21 @@ new Vue({
 
 ```js
 const router = new VueRouter({
-    routes: [
-        // dynamic segments start with a colon
-        { path: '/user/:id', component: User }
-    ]
+	routes: [
+		// dynamic segments start with a colon
+		{ path: '/user/:id', component: User }
+	]
 });
 ```
 
 * [x] You can check out a simple live example [here][dynamic-route-matching2].
 
 ### Day 29: 12 Dec 2017
+
+* [x] Learned about setting up [Firebase database][firebase].
+* [x] Learned about saving data to <em>Firebase database</em>.
+
+### Day 30: 13 Dec 2017
 
 * [ ] TODO
 
@@ -240,3 +245,4 @@ const router = new VueRouter({
 [router-link]: https://router.vuejs.org/en/api/router-link.html
 [dynamic-route-matching]: https://router.vuejs.org/en/essentials/dynamic-matching.html
 [dynamic-route-matching2]: https://jsfiddle.net/Lb0h803v/
+[firebase]: https://firebase.google.com/
