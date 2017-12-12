@@ -3,7 +3,7 @@
         <app-header></app-header>
         <!-- route outlet -->
         <!-- component matched by the route will render here -->
-        <router-view></router-view>
+        <router-view :firebaseUrl="firebaseUrl"></router-view>
     </div>
 </template>
 
@@ -18,7 +18,9 @@ export default {
         'app-header': header
     },
     data() {
-        return {};
+        return {
+            firebaseUrl: 'https://learn-vue2.firebaseio.com'
+        };
     },
     methods: {}
 };

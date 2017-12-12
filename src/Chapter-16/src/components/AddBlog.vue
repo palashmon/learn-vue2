@@ -44,6 +44,12 @@
 <script>
 // Imports
 export default {
+    props: {
+        firebaseUrl: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             blog: {
@@ -58,16 +64,11 @@ export default {
     },
     methods: {
         addBlog: function() {
-            this.$http
-                .post('http://jsonplaceholder.typicode.com/posts', {
-                    title: this.blog.title,
-                    body: this.blog.content,
-                    userId: 1
-                })
-                .then(function(data) {
-                    console.log(data);
-                    this.submitted = true;
-                });
+            // console.log(this.firebaseUrl);
+            this.$http.post(`${this.firebaseUrl}/posts.json`, this.blog).then(function(data) {
+                console.log(data);
+                this.submitted = true;
+            });
         }
     }
 };

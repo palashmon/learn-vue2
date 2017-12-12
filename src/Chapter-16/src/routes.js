@@ -4,6 +4,6 @@ import singleBlog from './components/SingleBlog.vue';
 
 export default [
     { path: '/', component: showBlogs },
-    { path: '/add', component: addBlog },
+    { path: '/add', component: addBlog, props: true },
     { path: '/blog/:id', component: singleBlog }
 ];
