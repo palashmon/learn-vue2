@@ -204,9 +204,10 @@ const router = new VueRouter({
 * [x] Learned about setting up [Firebase database][firebase].
 * [x] Learned about saving data to <em>Firebase database</em>.
 
-### Day 30: 13 Dec 2017
+### Day 30: 18 Dec 2017
 
-* [ ] TODO
+* [x] Learned about how we can retrieve posts from Firebase.
+* [x] Display specific post based on post key stored in Firebase.
 
 <!-- All links are added here -->
 
