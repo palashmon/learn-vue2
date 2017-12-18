@@ -19,7 +19,7 @@ export default {
     },
     data() {
         return {
-            firebaseUrl: 'https://learn-vue2.firebaseio.com'
+            firebaseUrl: 'https://learn-vue2-f80bc.firebaseio.com/'
         };
     },
     methods: {}

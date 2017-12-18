@@ -1,13 +1,24 @@
 <template>
     <div id="single-blog">
         <h2>{{ blog.title | capitalize}}</h2>
-        <article>{{ blog.body | capitalize }}</article>
+        <article><b>Author:</b> {{ blog.author | capitalize }}</article>
+        <article>{{ blog.content | capitalize }}</article>
+        <p><b>Categories:</b></p>
+        <ul>
+            <li v-for="category in blog.categories" :key="category">{{ category }}</li>
+        </ul>
     </div>
 </template>
 
 <script>
 // Imports
 export default {
+    props: {
+        firebaseUrl: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             id: this.$route.params.id,
@@ -15,10 +26,10 @@ export default {
         };
     },
     created() {
-        this.$http.get('http://jsonplaceholder.typicode.com/posts/' + this.id).then(function(data) {
-            // console.log(data);
-            this.blog = data.body;
-        });
+        this.$http
+            .get(`${this.firebaseUrl}/posts/${this.id}.json`)
+            .then(data => data.json())
+            .then(data => (this.blog = data));
     }
 };
 </script>

@@ -2,12 +2,13 @@
     <div id="show-blogs">
         <h1>All Blog Articles</h1>
         <input type="text" v-model="search" placeholder="Search Blogs" />
-        <div v-for="blog in filteredBlogs" class="single-blog" :key="blog.id">
+        <div v-for="(blog, index) in filteredBlogs" class="single-blog" :key="blog.id">
             <h2>
-                <router-link v-bind:to="'/blog/' + blog.id">#{{ blog.id }}</router-link>
+                <router-link v-bind:to="'/blog/' + blog.id">#{{ index + 1 }}</router-link>
                 - {{ blog.title | capitalize}}
             </h2>
-            <article>{{ blog.body | capitalize }}</article>
+            <article><b>Author:</b> {{ blog.author | capitalize }}</article>
+            <article>{{ blog.content | capitalize }}</article>
         </div>
     </div>
 </template>
@@ -16,6 +17,12 @@
 // Add serach mixin
 import searchMixin from '../mixins/searchMixin';
 export default {
+    props: {
+        firebaseUrl: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             blogs: [],
@@ -24,15 +31,17 @@ export default {
     },
     methods: {},
     created() {
-        const concatinate = text =>
-            `${text} Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor libero sit amet lacus pulvinar, vel cursus odio mollis. Cras posuere, lectus ac lacinia mattis, sapien tellus maximus enim, non condimentum diam quam vitae diam.`;
-
-        this.$http.get('http://jsonplaceholder.typicode.com/posts').then(function(data) {
-            // const body = data.body.slice(0, 10);
-            // body.forEach(o => (o.body = concatinate(o.body)));
-            // console.log(body);
-            this.blogs = data.body.slice(0, 10);
-        });
+        this.$http
+            .get(`${this.firebaseUrl}/posts.json`)
+            .then(data => data.json())
+            .then(data => {
+                var blogsArray = [];
+                for (let key in data) {
+                    data[key].id = key;
+                    blogsArray.push(data[key]);
+                }
+                this.blogs = blogsArray.slice(0, 10);
+            });
     },
     mixins: [searchMixin]
 };
